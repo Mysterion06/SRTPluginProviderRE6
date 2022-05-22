@@ -1,0 +1,15 @@
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\SRTPluginProviderRE6.csproj.AssemblyReference.cache
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\SRTPluginProviderRE6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\SRTPluginProviderRE6.AssemblyInfoInputs.cache
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\SRTPluginProviderRE6.AssemblyInfo.cs
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\SRTPluginProviderRE6.csproj.CoreCompileInputs.cache
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\bin\x86\Release\net5.0\SRTPluginProviderRE6.deps.json
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\bin\x86\Release\net5.0\SRTPluginProviderRE6.dll
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\bin\x86\Release\net5.0\ref\SRTPluginProviderRE6.dll
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\bin\x86\Release\net5.0\SRTPluginProviderRE6.pdb
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\bin\x86\Release\net5.0\ProcessMemory32.dll
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\bin\x86\Release\net5.0\ProcessMemory32.pdb
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\SRTPluginProviderRE6.csproj.CopyComplete
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\SRTPluginProviderRE6.dll
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\ref\SRTPluginProviderRE6.dll
+C:\Users\mert2\Documents\GhubStuff\SRTs\SRTPluginProviderRE6\SRTPluginProvideRE6\obj\x86\Release\net5.0\SRTPluginProviderRE6.pdb
