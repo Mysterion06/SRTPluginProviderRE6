@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mert2\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProvideRE6\\SRTPluginProviderRE6.csproj": {}
+    "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj": {
+    "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj": {
       "version": "3.0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj",
+        "projectUniqueName": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj",
         "projectName": "ProcessMemory32",
-        "projectPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj",
+        "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj",
         "packagesPath": "C:\\Users\\mert2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\obj\\",
+        "outputPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\mert2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "netstandard2.0": {
@@ -61,25 +71,30 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
+    "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
       "version": "3.0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
+        "projectUniqueName": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
         "projectName": "SRTPluginBase",
-        "projectPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
+        "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
         "packagesPath": "C:\\Users\\mert2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\obj\\",
+        "outputPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\mert2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,12 +114,22 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "GlobalHotKey": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "System.Text.Json": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -116,7 +141,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -125,21 +151,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mert2\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProvideRE6\\SRTPluginProviderRE6.csproj": {
-      "version": "1.0.0.2",
+    "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj": {
+      "version": "1.0.0.4",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mert2\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProvideRE6\\SRTPluginProviderRE6.csproj",
+        "projectUniqueName": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
         "projectName": "SRTPluginProviderRE6",
-        "projectPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProvideRE6\\SRTPluginProviderRE6.csproj",
+        "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
         "packagesPath": "C:\\Users\\mert2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProvideRE6\\obj\\",
+        "outputPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\mert2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -153,11 +183,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj": {
-                "projectPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj"
+              "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj": {
+                "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj"
               },
-              "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
-                "projectPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
+              "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
+                "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
                 "excludeAssets": "runtime"
               }
             }
@@ -167,7 +197,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -178,7 +214,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -187,7 +224,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

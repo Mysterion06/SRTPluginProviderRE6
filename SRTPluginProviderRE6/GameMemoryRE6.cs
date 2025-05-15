@@ -29,6 +29,15 @@ namespace SRTPluginProviderRE6
         public GameStats Stats { get => _stats; set => _stats = value; }
         internal GameStats _stats;
 
+        //Player Points
+        public int StatusPoints { get => _statusPoints; set => _statusPoints = value; }
+        internal int _statusPoints;
+        public int StatusPointsCur { get => _statusPointsCur; set => _statusPointsCur = value; }
+        internal int _statusPointsCur;
+
+        // Areas
+        public short Areas { get => _areas; set => _areas = value; }
+        internal short _areas;
         // Enemy HP
         public EnemyHP[] EnemyHealth { get => _enemyHealth; set => _enemyHealth = value; }
         internal EnemyHP[] _enemyHealth;

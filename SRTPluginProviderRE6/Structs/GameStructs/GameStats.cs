@@ -14,7 +14,6 @@ namespace SRTPluginProviderRE6.Structs.GameStructs
         [FieldOffset(0x4134)] private int dASherry;
         [FieldOffset(0x4138)] private int dAAda;
         [FieldOffset(0x413C)] private int dAHunk;
-        //[FieldOffset(0x0)] private int statusPoints;
 
         public int DALeon => dALeon;
         public int DAHelena => dAHelena;
@@ -24,7 +23,5 @@ namespace SRTPluginProviderRE6.Structs.GameStructs
         public int DASherry => dASherry;
         public int DAAda => dAAda;
         public int DAHunk => dAHunk;
-
-        //public int StatusPoints => statusPoints;
     }
 }

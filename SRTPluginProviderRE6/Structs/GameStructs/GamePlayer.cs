@@ -21,6 +21,7 @@ namespace SRTPluginProviderRE6.Structs.GameStructs
                 PercentageHP >= 0.33f ? PlayerState.Caution :
                 PlayerState.Danger;
         }
+        public string CurrentHealthState => HealthState.ToString();
     }
     public enum PlayerState
     {

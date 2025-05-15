@@ -6,15 +6,17 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "SRTPluginProviderRE6/1.0.0.2": {
+      "SRTPluginProviderRE6/1.0.0.4": {
         "dependencies": {
           "ProcessMemory32": "3.0.0.1",
-          "SRTPluginBase": "3.0.0.1"
+          "SRTPluginBase": "3.0.0.1",
+          "ProcessMemory32.Reference": "3.0.0.0"
         },
         "runtime": {
           "SRTPluginProviderRE6.dll": {}
         }
       },
+      "GlobalHotKey/1.1.0": {},
       "System.Memory/4.5.4": {},
       "System.Text.Json/5.0.2": {
         "runtime": {
@@ -30,16 +32,34 @@
           "System.Text.Json": "5.0.2"
         },
         "runtime": {
-          "ProcessMemory32.dll": {}
+          "ProcessMemory32.dll": {
+            "assemblyVersion": "3.0.0.1",
+            "fileVersion": ""
+          }
+        }
+      },
+      "ProcessMemory32.Reference/3.0.0.0": {
+        "runtime": {
+          "ProcessMemory32.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.1"
+          }
         }
       }
     }
   },
   "libraries": {
-    "SRTPluginProviderRE6/1.0.0.2": {
+    "SRTPluginProviderRE6/1.0.0.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "GlobalHotKey/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KkEHhyM+sSh27kF1d3YlfpXdYlkfu17XCiI3WfYy1cn65y3loR7f+GMkMwHTgf0xSyS3QdXTKCRfVLzb7jgJFQ==",
+      "path": "globalhotkey/1.1.0",
+      "hashPath": "globalhotkey.1.1.0.nupkg.sha512"
     },
     "System.Memory/4.5.4": {
       "type": "package",
@@ -57,6 +77,11 @@
     },
     "ProcessMemory32/3.0.0.1": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProcessMemory32.Reference/3.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

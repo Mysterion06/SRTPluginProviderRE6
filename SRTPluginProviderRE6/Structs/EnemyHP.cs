@@ -21,13 +21,13 @@ namespace SRTPluginProviderRE6.Structs
                     return "DEAD / DEAD (0%)";
             }
         }
-        public short MaximumHP { get => _maximumHP; }
-        internal short _maximumHP;
+        public ushort MaximumHP { get => _maximumHP; }
+        internal ushort _maximumHP;
 
-        public short CurrentHP { get => _currentHP; }
-        internal short _currentHP;
+        public ushort CurrentHP { get => _currentHP; }
+        internal ushort _currentHP;
 
-        public bool IsTrigger => MaximumHP > 30000 || MaximumHP == 1;
+        public bool IsTrigger => MaximumHP > 34000 || MaximumHP == 1;
         public bool IsAlive => !IsTrigger && MaximumHP > 0 && CurrentHP > 0;
         public float Percentage => ((IsAlive) ? (float)CurrentHP / (float)MaximumHP : 0f);
     }

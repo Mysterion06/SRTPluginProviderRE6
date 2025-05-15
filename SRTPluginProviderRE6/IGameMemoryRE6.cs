@@ -15,6 +15,9 @@ namespace SRTPluginProviderRE6
         byte PlayerID { get; set; }
         GameStats Stats { get; set; }
         EnemyHP[] EnemyHealth { get; set; }
+        int StatusPoints { get; set; }
+        int StatusPointsCur { get; set; }
+        short Areas { get; set; }
 
         // Versioninfo
         string VersionInfo { get; }

@@ -11,7 +11,7 @@ namespace SRTPluginProviderRE6
 {
     internal class GameMemoryRE6Scanner : IDisposable
     {
-        private static readonly int MAX_ENTITIES = 12;
+        private static readonly int MAX_ENTITIES = 32;
 
         // Variables
         private ProcessMemoryHandler memoryAccess;
@@ -25,16 +25,19 @@ namespace SRTPluginProviderRE6
         private int pointerAddressDA;
         private int pointerAddressPlayerHP;
         private int pointerAddressPlayerID;
+        private int pointerAddressStatusPoints;
+        private int pointerAddressStatusPointsCur;
+        private int pointerAddressAreas;
 
         // Pointer Classes
         private IntPtr BaseAddress { get; set; }
         private MultilevelPointer PointerPlayerHP { get; set; }
         private MultilevelPointer PointerPlayerHP2 { get; set; }
         private MultilevelPointer PointerPlayerID { get; set; }
-        private MultilevelPointer PointerPlayerID2 { get; set; }
-        private MultilevelPointer PointerDA { get; set; }
-        private MultilevelPointer PointerPlayerState { get; set; }
         private MultilevelPointer PointerGameStats { get; set; }
+        private MultilevelPointer PointerStatusPoints { get; set; }
+        private MultilevelPointer PointerStatusPointsCurrent { get; set; }
+        private MultilevelPointer PointerAreas { get; set; }
         private MultilevelPointer[] PointerEnemyHP { get; set; }
         
         internal GameMemoryRE6Scanner(Process process = null)
@@ -65,6 +68,9 @@ namespace SRTPluginProviderRE6
                 PointerPlayerHP2 = new MultilevelPointer(memoryAccess, IntPtr.Add(BaseAddress, pointerAddressPlayerHP), 0x208, 0x210);
                 PointerPlayerID = new MultilevelPointer(memoryAccess, IntPtr.Add(BaseAddress, pointerAddressPlayerID));
                 PointerGameStats = new MultilevelPointer(memoryAccess, IntPtr.Add(BaseAddress, pointerAddressDA));
+                PointerStatusPoints = new MultilevelPointer(memoryAccess, IntPtr.Add(BaseAddress, pointerAddressStatusPoints));
+                PointerStatusPointsCurrent = new MultilevelPointer(memoryAccess, IntPtr.Add(BaseAddress, pointerAddressStatusPointsCur), 0x364);
+                PointerAreas = new MultilevelPointer(memoryAccess, IntPtr.Add(BaseAddress, pointerAddressAreas));
 
                 gameMemoryValues._enemyHealth = new EnemyHP[MAX_ENTITIES];
                 for (int i = 0; i < MAX_ENTITIES; ++i)
@@ -81,16 +87,22 @@ namespace SRTPluginProviderRE6
                 gameMemoryValues._gameInfo = "Old Patch";
                 pointerAddressPlayerHP = 0x14645F4;
                 pointerAddressDA = 0x013C6468;
-                pointerAddressEnemyHP = 0x013C540C;
+                pointerAddressEnemyHP = 0x146A314;
                 pointerAddressPlayerID = 0x13B8CF0;
+                pointerAddressStatusPoints = 0x013C549C;
+                pointerAddressStatusPointsCur = 0x01464430;
+                pointerAddressAreas = 0x013C523C;
             }
             else if (gv == GameVersion.RE6_1_1_0)
             {
                 gameMemoryValues._gameInfo = "Latest Release";
-                pointerAddressPlayerHP = 0x146E5FC;
+                pointerAddressPlayerHP = 0x146E5F0;
                 pointerAddressDA = 0x13D0468;
-                pointerAddressEnemyHP = 0x13CF40C;
+                pointerAddressEnemyHP = 0x1474314;
                 pointerAddressPlayerID = 0x13C2CF0;
+                pointerAddressStatusPoints = 0x13CF49C;
+                pointerAddressStatusPointsCur = 0x146E430;
+                pointerAddressAreas = 0x13CF23C;
             }
             else
             {
@@ -104,7 +116,7 @@ namespace SRTPluginProviderRE6
             {   
                 PointerEnemyHP = new MultilevelPointer[MAX_ENTITIES];
                 for (int i = 0; i < MAX_ENTITIES; ++i)
-                    PointerEnemyHP[i] = new MultilevelPointer(memoryAccess, IntPtr.Add(BaseAddress, pointerAddressEnemyHP), 0x50, 0x0 + (i * 0x4));
+                    PointerEnemyHP[i] = new MultilevelPointer(memoryAccess, IntPtr.Add(BaseAddress, pointerAddressEnemyHP), 0x374, 0x4, 0x194 + (i * 0xE0));
             }
         }
         
@@ -114,6 +126,9 @@ namespace SRTPluginProviderRE6
             PointerPlayerHP2.UpdatePointers();
             PointerPlayerID.UpdatePointers();
             PointerGameStats.UpdatePointers();
+            PointerStatusPoints.UpdatePointers();
+            PointerStatusPointsCurrent.UpdatePointers();
+            PointerAreas.UpdatePointers();
 
             GenerateEnemyEntries();
             for (int i = 0; i < MAX_ENTITIES; i++)
@@ -133,6 +148,13 @@ namespace SRTPluginProviderRE6
 
             // Game Stats
             gameMemoryValues._stats = PointerGameStats.Deref<GameStats>(0x0);
+            
+            // Status Points
+            gameMemoryValues._statusPoints = PointerStatusPoints.DerefInt(0x72C);
+            gameMemoryValues._statusPointsCur = PointerStatusPointsCurrent.DerefInt(0x4F3C);
+
+            // Areas
+            gameMemoryValues._areas = PointerAreas.DerefShort(0x118);
 
             // Enemy HP
             for (int i = 0; i < gameMemoryValues._enemyHealth.Length; ++i)
@@ -142,8 +164,8 @@ namespace SRTPluginProviderRE6
                     // Check to see if the pointer is currently valid. It can become invalid when rooms are changed.
                     if (PointerEnemyHP[i].Address != IntPtr.Zero)
                     {
-                        gameMemoryValues.EnemyHealth[i]._currentHP = PointerEnemyHP[i].DerefShort(0xF10);
-                        gameMemoryValues.EnemyHealth[i]._maximumHP = PointerEnemyHP[i].DerefShort(0xF12);
+                        gameMemoryValues.EnemyHealth[i]._currentHP = PointerEnemyHP[i].DerefUShort(0xF10);
+                        gameMemoryValues.EnemyHealth[i]._maximumHP = PointerEnemyHP[i].DerefUShort(0xF12);
                     }
                     else
                     {

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "GlobalHotKey/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/GlobalHotKey.dll": {}
+        },
+        "runtime": {
+          "lib/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
@@ -14,10 +23,14 @@
       "System.Text.Json/5.0.2": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ProcessMemory32/3.0.0.1": {
@@ -38,6 +51,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "GlobalHotKey": "1.1.0",
           "System.Text.Json": "5.0.2"
         },
         "compile": {
@@ -50,6 +64,18 @@
     }
   },
   "libraries": {
+    "GlobalHotKey/1.1.0": {
+      "sha512": "KkEHhyM+sSh27kF1d3YlfpXdYlkfu17XCiI3WfYy1cn65y3loR7f+GMkMwHTgf0xSyS3QdXTKCRfVLzb7jgJFQ==",
+      "type": "package",
+      "path": "globalhotkey/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "globalhotkey.1.1.0.nupkg.sha512",
+        "globalhotkey.nuspec",
+        "lib/GlobalHotKey.dll"
+      ]
+    },
     "System.Memory/4.5.4": {
       "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
@@ -113,19 +139,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mert2\\.nuget\\packages\\": {}
+    "C:\\Users\\mert2\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0.2",
+    "version": "1.0.0.4",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mert2\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProvideRE6\\SRTPluginProviderRE6.csproj",
+      "projectUniqueName": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
       "projectName": "SRTPluginProviderRE6",
-      "projectPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProvideRE6\\SRTPluginProviderRE6.csproj",
+      "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
       "packagesPath": "C:\\Users\\mert2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProvideRE6\\obj\\",
+      "outputPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\mert2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -139,11 +170,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj": {
-              "projectPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj"
+            "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj": {
+              "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj"
             },
-            "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
-              "projectPath": "C:\\Users\\mert2\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
+            "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
+              "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
               "excludeAssets": "runtime"
             }
           }
@@ -153,7 +184,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net5.0": {
@@ -164,7 +201,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -173,8 +211,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Das Paket \"GlobalHotKey 1.1.0\" wurde nicht mit dem Projektzielframework \"net5.0\", sondern mit \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" wiederhergestellt. Dieses Paket ist mit Ihrem Projekt möglicherweise nicht vollständig kompatibel.",
+      "libraryId": "GlobalHotKey",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
