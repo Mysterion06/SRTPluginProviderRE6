@@ -145,11 +145,11 @@
   "project": {
     "version": "1.0.0.4",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
+      "projectUniqueName": "C:\\Coding\\Personal\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
       "projectName": "SRTPluginProviderRE6",
-      "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
+      "projectPath": "C:\\Coding\\Personal\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
       "packagesPath": "C:\\Users\\mert2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\obj\\",
+      "outputPath": "C:\\Coding\\Personal\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -170,11 +170,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj": {
-              "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj"
+            "C:\\Coding\\Personal\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj": {
+              "projectPath": "C:\\Coding\\Personal\\Squirrelies\\ProcessMemory\\ProcessMemory\\ProcessMemory.csproj"
             },
-            "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
-              "projectPath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
+            "C:\\Coding\\Personal\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj": {
+              "projectPath": "C:\\Coding\\Personal\\Squirrelies\\SRTHost\\SRTPluginBase\\SRTPluginBase.csproj",
               "excludeAssets": "runtime"
             }
           }

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2021 Travis J. Gutjahr")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A provider plugin for the SRT Host to provide memory values to other plugins.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.4")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.4+510b6061eea8a87cbf05433a094252e06985312e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.4+78c139a2c803e53a6e18db64a1f5b05d6063422a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Devil May Cry Memory Provider Plugin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SRTPluginProviderRE6")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.0.0")]

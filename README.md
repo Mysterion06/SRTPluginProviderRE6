@@ -4,7 +4,6 @@
 ![Downloads](https://img.shields.io/github/downloads/Mysterion06/SRTPluginProviderRE6/total?color=%23007EC6&style=for-the-badge)
 
 A game memory provider plugin for Resident Evil 6 (2013) for the SRT Host to provide memory values to other plugins.
-"# SRTPluginProviderRE6"
 
 ## Link
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QIHxxfwT7R8=",
+  "dgSpecHash": "CFLYOA5eXJg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mert2\\OneDrive\\Documents\\GhubStuff\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
+  "projectFilePath": "C:\\Coding\\Personal\\SRTs\\SRTPluginProviderRE6\\SRTPluginProviderRE6\\SRTPluginProviderRE6.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mert2\\.nuget\\packages\\globalhotkey\\1.1.0\\globalhotkey.1.1.0.nupkg.sha512",
     "C:\\Users\\mert2\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
